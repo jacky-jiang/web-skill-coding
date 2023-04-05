@@ -1,7 +1,4 @@
-declare class StorageBase {
-  getItem: (key: string) => string;
-  setItem: (key: string, value: string) => void
-}
+import { StorageBaseType } from '../../types/sington-storage'
 
 function StorageBase() {}
 
@@ -13,8 +10,8 @@ StorageBase.prototype.setItem = (key: string, value: string) => {
   return localStorage.setItem(key, value);
 }
 
-const SingtonStorage: () => StorageBase = (function() {
-  let instance: StorageBase = null;
+const SingtonStorage: () => StorageBaseType = (function() {
+  let instance: StorageBaseType = null;
 
   return function() {
     if (!instance) {
@@ -27,6 +24,5 @@ const SingtonStorage: () => StorageBase = (function() {
 })();
 
 export {
-  SingtonStorage,
-  StorageBase
+  SingtonStorage
 }

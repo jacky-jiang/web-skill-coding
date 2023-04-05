@@ -1,7 +1,8 @@
-import { SingtonStorage, StorageBase } from "./sington-storage";
+import { SingtonStorage } from "./sington-storage";
+import { StorageBaseType } from "../types/sington-storage";
 
-const storage1: StorageBase = SingtonStorage();
-const storage2: StorageBase = SingtonStorage();
+const storage1: StorageBaseType = SingtonStorage();
+const storage2: StorageBaseType = SingtonStorage();
 
 storage1.setItem('name', '李雷');
 storage2.setItem('sex', '男');
