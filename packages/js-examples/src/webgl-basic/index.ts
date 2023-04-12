@@ -17,6 +17,7 @@ function main() {
   }
 
   const a_Position = gl.getAttribLocation(gl.program, 'a_Position');
+  const a_PointSize = gl.getAttribLocation(gl.program, 'a_PointSize');
 
   if (a_Position < 0) {
     console.log('Failed to get the storage location of a_Position');
@@ -25,6 +26,7 @@ function main() {
 
   // pass vertex position to attribute variable
   gl.vertexAttrib3f(a_Position, 0.5, 0.2, 0.2);
+  gl.vertexAttrib1f(a_PointSize, 12.0);
 
   // specify the color for clearing <canvas>
   gl.clearColor(0.0, 0.0, 0.0, 1.0);
