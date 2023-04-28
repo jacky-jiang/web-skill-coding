@@ -12,7 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
     "html-webpack-plugin": "^5.5.0",
+    "lint-staged": "^13.2.2",
+    "simple-git-hooks": "^2.8.1",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.2",
     "webpack": "^5.76.2",

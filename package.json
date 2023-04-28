@@ -8,5 +8,17 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "lint-staged": "^13.2.2",
+    "simple-git-hooks": "^2.8.1"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint ."
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  }
 }
