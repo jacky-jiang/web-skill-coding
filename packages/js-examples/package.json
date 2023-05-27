@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
     "build": "webpack",
-    "lint": "eslint --ignore-pattern './src/**/*.d.ts' . './src/**'"
+    "lint": "eslint --ignore-pattern './src/**/*.d.ts' './src/**'"
   },
   "keywords": [],
   "author": "",
