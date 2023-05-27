@@ -5,7 +5,10 @@ module.exports = {
     "node": true,
   },
   "extends": "eslint:recommended",
-  "ignorePatterns": ["**/*.d.ts"],
+  "globals": {
+    "ImageDecoder": "readonly",
+  },
+  "ignorePatterns": ["**/*.d.ts", "dist/*"],
   "rules": {
     // "semi": ["error", "always"],
     // "quotes": ["error", "double"],

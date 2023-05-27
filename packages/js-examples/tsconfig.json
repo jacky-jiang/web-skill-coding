@@ -8,8 +8,9 @@
     "allowJs": true,
     "moduleResolution": "node",
     "sourceMap": true,
+    "lib": ["DOM", "ESNext"],
     "typeRoots": ["./node_modules/@types", "./src/webgl-basic/types"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/index.ts"]
 }
