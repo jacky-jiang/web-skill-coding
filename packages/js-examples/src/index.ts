@@ -2,4 +2,4 @@ import { main } from "./webgl-basic";
 
 main();
 
-console.log('test eslint')
+console.log('test eslint');

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "pnpm -F js-examples lint"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,7 @@
     "simple-git-hooks": "^2.8.1"
   },
   "lint-staged": {
-    "*.{js,ts}": "eslint ."
+    "*.{js,ts}": "pnpm run lint"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

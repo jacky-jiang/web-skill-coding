@@ -5,8 +5,9 @@ module.exports = {
     "node": true,
   },
   "extends": "eslint:recommended",
+  "ignorePatterns": ["**/*.d.ts"],
   "rules": {
-    "semi": ["error", "always"],
+    // "semi": ["error", "always"],
     // "quotes": ["error", "double"],
   },
   "parser": "@typescript-eslint/parser",
